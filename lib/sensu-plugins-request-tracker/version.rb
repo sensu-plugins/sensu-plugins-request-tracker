@@ -1,4 +1,4 @@
-module SensuPluginsHubot
+module SensuPluginsRequestTracker
   module Version
     MAJOR = 0
     MINOR = 0
