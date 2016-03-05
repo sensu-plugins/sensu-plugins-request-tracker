@@ -16,13 +16,15 @@ notifications:
     on_failure: always
 script:
 - bundle exec rake default
+- gem build sensu-plugins-request-tracker.gemspec
+- gem install sensu-plugins-request-tracker-*.gem
 deploy:
   provider: rubygems
   api_key:
-    secure: K2wb1+gChc0oHL+w6wzLm12RWy+hMyzyjNiIdoIqkyCo1Bkrw3bd2ZxouhxBgWFemphGpIeiQAYYwNNpXFVF04TTXfv8tVGJbiRkw1PwzVqO9HU10LEBf6dEvXZwgTl+moSL/ucSiDca/6u2VDtcPkbed3nIQFPXcMXzwEbxRBU=
+    secure: h/nl5rLtZopJbi7khsDZd/oc/nYKKZ33MI2SNDtz5Cjp9wAWdkbPy539iuCTqLrhZqEYvy3fkT5/UEfBsSE4OaHvaJ4/Dx0u1sM8mBm+GzurpEN2wguCpATO4ilmuAVP7bVk7JGPBzckQMdR7PuPyFwL69f+K49zE9SaLm+cq+M=
   gem: sensu-plugins-request-tracker
   on:
-    tags: true
+    ags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
