@@ -24,7 +24,7 @@ deploy:
     secure: h/nl5rLtZopJbi7khsDZd/oc/nYKKZ33MI2SNDtz5Cjp9wAWdkbPy539iuCTqLrhZqEYvy3fkT5/UEfBsSE4OaHvaJ4/Dx0u1sM8mBm+GzurpEN2wguCpATO4ilmuAVP7bVk7JGPBzckQMdR7PuPyFwL69f+K49zE9SaLm+cq+M=
   gem: sensu-plugins-request-tracker
   on:
-    ags: true
+    tags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
