@@ -44,4 +44,4 @@ task :check_binstubs do
   end
 end
 
-task default: args
+task default: [:spec, :make_bin_executable, :yard, :rubocop, :check_binstubs]
